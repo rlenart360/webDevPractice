@@ -7,7 +7,14 @@
     <body>
         <h2>Head for the web page!!</h2>
         <p>Here are some words. Thank you goodnight.</p>
-        <div id = 'example'></div>
+        <div id='example' onClick='goodbye() '>
+            Users without Javascript see this
+        </div>
     </body>
-    <script>document.getElementById('example').innerHTML='Hello worl.'</script>
+    <script>
+        document.getElementById('example').innerHTML='Hello worl.';
+        function goodbye() {
+            document.getElementById('example').innerHTML='Goodbye world!';
+        }
+    </script>
 </html>
